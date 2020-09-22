@@ -10,6 +10,10 @@
 
 
 /* HEADER TOP */
+header .top > * {
+    height: 100px;
+}
+
 .logo {
     background-color: red;
 }
@@ -24,10 +28,24 @@
 
 
 /* HEADER BOTTOM */
-header div.bottom {
-    background-color: lightgrey;
+header .bottom > * {
+    height: 300px;
 }
+
 .motto {
     background-color: pink;
+}
+
+
+/* MAIN TOP*/
+main .top > * {
     height: 300px;
+}
+
+.img {
+    background-color: yellow;
+}
+
+.learning-path {
+    background-color: green;
 }
