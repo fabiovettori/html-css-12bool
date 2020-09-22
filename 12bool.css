@@ -1,10 +1,17 @@
 /* GENERAL SETTINGs */
-.container {
+.container-sm {
     max-width: 1200px;
+}
+
+.container-lg {
+    max-width: 1600px;
+}
+
+[class*='container'] {
     margin: auto;
 }
 
-.container::after {
+[class*='container']::after {
     content: '';
     display: table;
     clear: both;
