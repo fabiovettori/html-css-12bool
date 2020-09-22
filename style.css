@@ -1,68 +1,60 @@
+/* GENERAL SETTINGS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-[class*='col'] {
-    height: 100px;
-}
 
-
-/* HEADER TOP */
-header .top > * {
+/* HEADER TOP SECTION */
+header .top > div {
     height: 100px;
     border: 2px solid black;
-}
-
-.logo {
-    background-color: red;
-}
-
-.nav-menu {
     background-color: blue;
 }
 
-.log-in {
+
+/* HEADER BOTTOM SECTION */
+header .bottom > div {
+    height: 300px;
+    border: 2px solid black;
     background-color: green;
 }
 
 
-/* HEADER BOTTOM */
-header .bottom > * {
+/* MAIN TOP SECTION */
+main .top > div {
     height: 300px;
     border: 2px solid black;
-}
-
-.motto {
-    background-color: pink;
-}
-
-
-/* MAIN TOP*/
-main .top > * {
-    height: 300px;
-    border: 2px solid black;
-}
-
-.img {
     background-color: yellow;
 }
 
-.learning-path {
-    background-color: green;
-}
 
-/* MAIN MIDDLE*/
-main .middle > * {
+/* MAIN MIDDLE SECTION */
+main .middle > div {
     height: 150px;
     border: 2px solid black;
-}
-
-.install {
     background-color: red;
 }
 
-.middle .sections {
-    background-color: green;
+
+/* MAIN BOTTOM SECTION*/
+main .bottom > div {
+    height: 200px;
+    border: 2px solid black;
+    background-color: lightblue;
+}
+
+
+/* FOOTER*/
+footer .row > div {
+    height: 200px;
+    border: 2px solid black;
+    background-color: pink;
+}
+
+footer .row .links > div {
+    height: 100px;
+    border: 2px solid black;
+    
 }
