@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[class*='col'] {
+    height: 100px;
+}
+
+
+/* HEADER TOP */
+.logo {
+    background-color: red;
+}
+
+.nav-menu {
+    background-color: blue;
+}
+
+.log-in {
+    background-color: green;
+}
+
+
+/* HEADER BOTTOM */
+header div.bottom {
+    background-color: lightgrey;
+}
+.motto {
+    background-color: pink;
+    height: 300px;
+}
