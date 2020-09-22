@@ -12,6 +12,7 @@
 /* HEADER TOP */
 header .top > * {
     height: 100px;
+    border: 2px solid black;
 }
 
 .logo {
@@ -30,6 +31,7 @@ header .top > * {
 /* HEADER BOTTOM */
 header .bottom > * {
     height: 300px;
+    border: 2px solid black;
 }
 
 .motto {
@@ -40,6 +42,7 @@ header .bottom > * {
 /* MAIN TOP*/
 main .top > * {
     height: 300px;
+    border: 2px solid black;
 }
 
 .img {
@@ -47,5 +50,19 @@ main .top > * {
 }
 
 .learning-path {
+    background-color: green;
+}
+
+/* MAIN MIDDLE*/
+main .middle > * {
+    height: 150px;
+    border: 2px solid black;
+}
+
+.install {
+    background-color: red;
+}
+
+.middle .sections {
     background-color: green;
 }
