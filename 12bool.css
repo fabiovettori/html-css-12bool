@@ -7,6 +7,10 @@
     max-width: 1600px;
 }
 
+.container-full {
+    width: 100%;
+}
+
 [class*='container'] {
     margin: auto;
 }

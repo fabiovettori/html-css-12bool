@@ -5,56 +5,473 @@
     box-sizing: border-box;
 }
 
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
 
-/* HEADER TOP SECTION */
-header .top > div {
-    height: 100px;
-    border: 2px solid black;
-    background-color: blue;
+h3, p, a {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.float-l {
+    float: left;
+}
+
+.btn-green {
+    background-color: #64DE82;
+    font-size: 12px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    color: #337142;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 500;
+    line-height: 1.9;
+    transition: all .2s ease-in-out;
+}
+
+.btn-green:hover {
+    background-color: rgba(100,222,130,0.7);
+    color: white;
+}
+
+/* NAV SECTION */
+nav  {
+    position: fixed;
+    background-color: white;
+    padding: 5px 0;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+nav .top div:first-of-type {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav div div:last-of-type {
+    text-align: center;
+}
+
+nav div div > ul {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 25px;
+}
+
+nav div div > ul > li {
+    width: calc(100% / 6);
+    float: left;
+}
+
+nav ul span, nav div li span {
+    color: #001A4F;
+    line-height: 50px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+nav div span {
+    padding-right: 5px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+nav > div {
+    height: 50px;
+    line-height: 50px;
+}
+
+nav > div > li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+nav > div button:first-of-type {
+    background-color: transparent;
+    border: 1px solid #001A4F;
+    padding: 9px 25px;
+    text-transform: uppercase;
+    color: #001A4F;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+nav > div button:first-of-type:hover {
+    background-color: #001A4F;
+    color: white;
+    border-color: transparent;
+}
+
+nav > div button:last-of-type {
+    background-color: #64DE82;
+    border: 1px solid #64DE82;
+    padding: 11px 25px;
+    text-transform: uppercase;
+    color: #001A4F;
+    border-radius: 5px;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+nav > div button:last-of-type {
+    background-color: #64DE82;
+    border: 1px solid #64DE82;
+    padding: 11px 25px;
+    text-transform: uppercase;
+    color: #001A4F;
+    border-radius: 5px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+nav > div button:last-of-type:hover {
+    background-color: rgba(100,222,130,0.7);
+    color: #fff;
+    border-color: transparent;
+}
+
+nav li {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav button ~ li {
+    display: inline-block;
+}
+
+nav li ul li {
+    text-align: left;
+}
+
+nav li a {
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #001A4F;
+    font-size: 13px;
+    text-align: left;
+}
+
+nav div a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #001A4F;
+    font-size: 13px;
 }
 
 
-/* HEADER BOTTOM SECTION */
-header .bottom > div {
-    height: 300px;
-    border: 2px solid black;
-    background-color: green;
+/* HEADER SECTION */
+header {
+    background-image: url(https://www.fluentify.com/home/wp-content/uploads/2020/01/fluentify-cover-privati-scaled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 150px 0 100px 0;
+    position: relative;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(270deg, transparent 0%, #001A4F 100%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+header .bottom {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.motto h2 {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.motto h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.motto p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 
 /* MAIN TOP SECTION */
-main .top > div {
-    height: 300px;
-    border: 2px solid black;
-    background-color: yellow;
+.service-description {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.service-description h2, .service-description h3 {
+    font-weight: 500;
+}
+
+.service-description p, .service-description h2 {
+    color: #727272;
+}
+
+.service-description h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.service-description h2 span {
+    color: #64DE82;
+}
+
+.service-description h3 {
+    font-size: 27px;
+    color: #001A4F;
+}
+
+.service-description p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.service-description img {
+    width: 100%;
+}
+
+.service-description div div:nth-of-type(2) {
+    margin: 25px 0;
+    padding: 25px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 
 /* MAIN MIDDLE SECTION */
-main .middle > div {
-    height: 150px;
-    border: 2px solid black;
-    background-color: red;
+.service-setting-title h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #727272;
+    margin-bottom: 50px;
+}
+
+.service-setting div {
+    text-align:center;
+}
+
+.service-setting div:first-of-type {
+    padding-right: 10px;
+}
+
+.service-setting div:nth-of-type(2) {
+    padding: 0 10px;
+}
+
+.service-setting div:last-of-type {
+    padding-left: 10px;
+}
+
+.service-setting h2, .service-setting h3 {
+    font-weight: 500;
+}
+
+.service-setting h3 {
+    font-size: 27px;
+    margin: 18px 0 9px 0;
+    color: #001A4F;
+}
+
+.service-setting p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #727272;
+    line-height: 1.5;
 }
 
 
 /* MAIN BOTTOM SECTION*/
-main .bottom > div {
-    height: 200px;
-    border: 2px solid black;
-    background-color: lightblue;
+.mobile.container-full {
+    margin-top: 50px;
+    background-color: #001a4f;
+    color: white;
 }
 
+.align-y {
+    display: flex;
+    align-items: center;
+}
+
+.mobile img {
+    display: block;
+    margin: auto;
+}
+
+.mobile h2 {
+    font-size: 40px;
+    margin-bottom: 9px;
+    font-weight: 500;
+}
+
+.mobile p {
+    font-size: 18px;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
+.mobile a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #64DE82;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.mobile a:hover {
+    opacity: .7;
+}
+
+/* break */
+
+.security h2 {
+    font-size: 27px;
+    margin-bottom: 9px;
+    font-weight: 500;
+    color: #001A4F;
+}
+
+.security p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    font-weight: 400;
+    color: #727272;
+}
+
+/* break */
+.study-plans.container-full {
+    background-color: #294681;
+    color: white;
+}
+
+.study-plans h2 {
+    font-size: 40px;
+    margin-bottom: 9px;
+    font-weight: 500;
+    margin: 50px 0;
+}
+
+.study-plans p {
+    font-size: 18px;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
 
 /* FOOTER*/
-footer .row > div {
-    height: 200px;
-    border: 2px solid black;
-    background-color: pink;
+footer {
+    font-weight: 400;
+    background-color: #001a4f;
+    padding: 50px 15px;
+    color: white;
+    line-height: 1.5;
+    font-size: 14px;
 }
 
-footer .row .links > div {
-    height: 100px;
-    border: 2px solid black;
-    
+footer ul {
+    float:left;
+    width: calc(100% / 6);
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer img {
+    padding-bottom: 50px;
+    transition: all .2s ease-in-out;
+}
+
+footer img:hover {
+    opacity: .7;
+}
+
+.fluentify-info {
+    padding-right: 20px;
+}
+
+.fluentify-info span {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.fluentify-info a {
+    display: inline-block;
+    padding: 20px 0;
+}
+
+.social-icon a {
+    font-size: 16px;
+    color: #64DE82;
+}
+
+.social-icon a:hover {
+    opacity: .5;
+}
+
+.links {
+    padding-bottom: 20px;
+}
+
+.policy {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8)
+}
+
+.fa-facebook-f {
+    margin-right: 20px;
+}
+
+.links li a {
+    display: block;
+    line-height: 1.5;
+    padding: 5px 0;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all .2 ease-in-out;
+}
+
+.links li a:hover, .policy a:hover {
+    color: #64DE82;
+}
+
+.links li a:first-of-type {
+    padding-top: 10px;
+}
+
+.policy a {
+    margin-right: 30px;
+    transition: all .2 ease-in-out;
 }
